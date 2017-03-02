@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Controller
 public class IndexController {
-    public IndexController(){
-
+    @RequestMapping("/")
+    String index() {
+        return "index";
     }
 }
